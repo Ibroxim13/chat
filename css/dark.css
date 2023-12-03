@@ -454,6 +454,11 @@ body {
     align-items: center;
 }
 
+.writePostInput::placeholder {
+    color: #fff;
+    font-size: 18px;
+}
+
 .shareData {
     width: fit-content;
     margin: 0 10px;
@@ -472,14 +477,16 @@ body {
     overflow-y: hidden;
 }
 
-.voiceMassege {
-    width: fit-content;
-    margin: 0 10px;
+.sendIcon {
+    font-size: 25px;
     cursor: pointer;
+    transform: rotate(35deg);
+    margin-right: 5px;
+    color: #fff;
 }
 
 .to-signal {
-    font-size: 24px;
+    font-size: 26px;
     color: #fff;
     cursor: pointer;
 }
@@ -549,7 +556,7 @@ body {
 }
 
 .checkbox:checked+.checkbox-label {
-    background-color: #9c9c9c;
+    background-color: #607d8b;
 }
 
 .support {
@@ -770,6 +777,10 @@ body {
         top: 22px;
         right: 30px;
     }
+
+    .users{
+        height: calc(100vh - 123px);
+    }
 }
 
 @media screen and (max-width:400px) {
@@ -876,10 +887,17 @@ body {
         font-size: 20px;
     }
 
-    .voiceMassege,
-    .shareData {
-        width: 20px;
-        height: 20px;
+    .shareData img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .sendIcon{
+        font-size: 20px;
+    }
+
+    .writePostInput::placeholder{
+        font-size: 16px;
     }
 
     .chatBottom {

@@ -17,7 +17,6 @@ const chatMain = document.querySelector(".chatMain");
 const userDefaultImg = "https://avatars.mds.yandex.net/i?id=f591843a4a51a1ed07f14011bc5034f50c918112-10919901-images-thumbs&n=13";
 
 
-
 let user = JSON.parse(localStorage.getItem("user"))
 
 
@@ -131,7 +130,7 @@ checkbox.addEventListener("change", () => {
 })
 
 function deleteAccount() {
-    fetch(`https://655f26f7879575426b44ad38.mockapi.io/users/${user.id}`,{
+    fetch(`https://655f26f7879575426b44ad38.mockapi.io/users/${user.id}`, {
         method: "DELETE"
     })
         .then(res => res.json())
